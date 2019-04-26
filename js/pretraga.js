@@ -185,7 +185,7 @@ $(document).on('click', ".movie", function (){
   let ime = $(this).find("h3").html()
   fetch(`http://www.omdbapi.com/?t=${ime}&plot=full&apikey=c3d2adef`)
   .then(res => res.json())
-  .then(data => {
+  .then(res => {
     document.querySelector(".naziv").innerHTML = data.Title;
     document.querySelector(".glumci").innerHTML = data.Actors;
     document.querySelector(".plot").innerHTML = data.Plot;
