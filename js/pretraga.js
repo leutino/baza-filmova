@@ -180,8 +180,8 @@ strDoleNaz.addEventListener('click', function (e) {
 
 
 // MODAL
-$(document).on('click', ".movie", function (){
-  $("#myModal").modal('show');
+$(document).on("click", ".movie", function (){
+  $("#myModal").modal("show");
   let ime = $(this).find("h3").html()
   fetch(`http://www.omdbapi.com/?t=${ime}&plot=full&apikey=c3d2adef`)
   .then(res => res.json())
