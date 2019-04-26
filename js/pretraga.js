@@ -186,7 +186,7 @@ $(document).on('click', ".movie", function (){
   fetch(`http://www.omdbapi.com/?t=${ime}&plot=full&apikey=c3d2adef`)
   .then(res => res.json())
   .then(res => {
-    document.querySelector(".naziv").innerHTML = res.Title;
+    document.querySelector(".naziv").innerHTML = res."Title";
     document.querySelector(".glumci").innerHTML = res.Actors;
     document.querySelector(".plot").innerHTML = res.Plot;
     document.querySelector(".nagrade").innerHTML = res.Awards;
