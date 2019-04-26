@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Dodaj film</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+</head>
+
+<body>
+  <div class="containerM">
+    <header>
+        <h1><img src="css/slike/ico.png" alt="k3"> Filmovi</h1>
+        <h2>Ovde možete uživati sa nama!</h2>
+        <ul class="lista">
+            <li><a href="index.html"><button>Naslovna</button></a></li>
+            <li><a href="pretraga.html"><button>Pretraga</button></a></li>
+            <li><a href="dodaj_film.html"><button>Dodaj film</button></a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="unesi_film">
+            <div class="unos">
+              <h1>Dodaj Film</h1>
+              <form >
+              <h2>Ime filma:</h2> <br>
+              <input id="dodajIme" type="text" name="naziv" placeholder="Ime filma"><br>
+              <h2>Godina:</h2> <br>
+              <input id="dodajGodina" type="text" name="godina" placeholder="Godina"><br>
+              <h2>Slika:</h2> <br>
+              <input id="previewUrl" type="text" name="slika" placeholder="URL slike"> <br><br>
+              <input id="dodajDugme" type="submit" value="OK">
+              </form>
+              <div class="conPorukaUspeh">
+                <strong id="msgUspeh"></strong>
+              </div>
+            </div>
+            <div class="slika">
+                <img id="preview" src="#" alt="klapa">
+            </div>
+        </div>
+
+    </main>
+    <footer>Kontakt podaci: 011/777-333</footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="js/dodaj_film.js"></script>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,248 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+	line-height: 1.4;
+  text-align:center;
+}
+
+header, footer {
+  background-color:rgb(30, 12, 45);
+  color:rgb(244, 241, 150) ;
+}
+
+footer {
+  padding:10px;
+  text-align:center;
+  grid-area:f;
+}
+
+header {
+  grid-area:h;
+}
+header img {
+    vertical-align: bottom;
+}
+
+.containerM {
+  display:grid;
+  min-height:100vh;
+  grid-template-columns:repeat(4, 1fr);
+  grid-template-rows:150px auto 50px;
+  grid-template-areas:
+  "h h h h h h h h h h h h"
+  "m m m m m m m m m m m m"
+  "f f f f f f f f f f f f"
+}
+
+.lista {
+  background-color:rgb(32, 37, 71);
+  padding:10px;
+  display:flex;
+  justify-content:space-evenly;
+  list-style:none;
+}
+
+input {
+ background-color:rgb(244, 241, 150);
+}
+
+main {
+  grid-area:m;
+  padding:12px;
+  background-image:url("slike/Blue.jpg");
+  background-size: cover;
+  background-attachment:fixed;
+}
+
+h1 {
+  color:rgb(245, 211, 144);
+  text-align:center;
+  padding:12px;
+}
+
+button {
+  width:99px;
+  border-radius:6px;
+  border:solid 1px rgb(105, 24, 168);
+  padding:6px;
+  font-size:15px;
+  background-color:rgb(245, 211, 144);
+  color:rgb(30, 12, 45);
+}
+
+button:hover {
+  border-radius:6px;
+  border:solid 1px rgb(30, 12, 45);
+  padding:6px;
+  color:rgb(245, 211, 144) ;
+  background-color:rgb(30, 12, 45);
+}
+
+header h2 {
+  text-align:center;
+  padding:3px;
+  color:rgb(245, 211, 144);;
+}
+
+.lista li {
+  margin: 0 auto;
+}
+.lista input {
+  width: 10vw;
+  height: 1.5vh;
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+#login {
+  width: 5vw;
+  height: 2vh;
+  font-size: 10px;
+  padding: 0;
+  line-height: 2vh;
+}
+
+#filmovi {
+  display:flex;
+  justify-content:space-evenly;
+  flex-wrap:wrap;
+  margin-top:21px;
+}
+
+h3 {
+  width:111px;
+  color:rgb(245, 211, 144);
+}
+
+p {
+  color:rgb(219, 204, 204);
+  margin:9px;
+}
+
+p button {
+  width:15px;
+}
+
+h2 {
+  padding:9px;
+  color: rgb(244, 241, 150);
+  /* margin:9px; */
+}
+
+label, input {
+  display:block;
+  text-align:center;
+  /* color:rgb(244, 241, 150); */
+
+}
+
+input {
+  padding:9px;
+  margin-top:39px;
+  margin-bottom:21px;
+  border:1px solid rgb(30, 12, 45);
+  width: 300px;
+}
+
+
+form input{
+ margin: 0;
+}
+
+
+.unesi_film {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.unos {
+  margin-left:39px;
+  margin-top:57px;
+}
+
+.slika{
+  margin-left: 3vw;
+}
+
+.slika img {
+  opacity:0.8;
+}
+
+#pronadji {
+  margin:9px auto 21px;
+  color: rgb(30, 12, 45);
+}
+
+.movie {
+  margin-bottom:69px;
+
+}
+.movie img {
+  width: 300px;
+  height: 450px;
+}
+
+.ispis img {
+  width: 300px;
+  height: 450px;
+}
+
+.conPorukaUspeh {
+  color:rgb(245, 211, 144);
+}
+
+.filmski-div-sortirano img {
+  width: 300px;
+  height: 450px;
+}
+
+
+/* IKS DUGME */
+
+.iks:hover {
+  cursor: pointer;
+}
+
+.iks{
+  display: none;
+  position: absolute;
+  right:3px;
+  top:3px;
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-style: italic;
+  font-weight: bold;
+}
+.movie, .filmski-div-sortirano {
+  position: relative;
+
+}
+
+.iks span{
+  display: none;
+}
+/* IKS DUGME END */
